@@ -19,14 +19,15 @@ class PostFactory extends Factory
     {
         $title = fake()->sentence(4);
 
-        return [
-            'user_id'     => \App\Models\User::factory(),
-            'category_id' => \App\Models\Category::factory(),
-            'title'       => $title,
-            'slug'        => Str::slug($title),
-            'excerpt'     => fake()->paragraph(),
-            'body'        => fake()->paragraphs(3, true),
-            'image'       => null,
-        ];
+return [
+    'user_id' => \App\Models\User::factory(),
+    'category_id' => \App\Models\Category::factory(),
+    'title'   => $title,
+    'slug'    => Str::slug($title),
+    'excerpt' => fake()->paragraph(),
+    'body'    => fake()->paragraphs(3, true),
+    'image'   => null,
+];
+
     }
 }

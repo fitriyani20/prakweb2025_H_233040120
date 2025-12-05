@@ -29,16 +29,8 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
-         // 2 Categories
-        Category::factory()->create([
-            'name' => 'Technology',
-            'slug' => 'technology'
-        ]);
-
-        Category::factory()->create([
-            'name' => 'Lifestyle',
-            'slug' => 'lifestyle'
-        ]);
+        // 5 Categories
+        Category::factory(5)->create();
 
 
         // 10 Posts

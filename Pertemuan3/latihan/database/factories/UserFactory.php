@@ -25,7 +25,7 @@ class UserFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'username' => fake()->umique()->userName(),
+            'username' => fake()->unique()->userName(),
             'email' => fake()->unique()->safeEmail(),
             'password' => Hash::make('password'),    
         ];
@@ -41,3 +41,4 @@ class UserFactory extends Factory
         ]);
     }
 }
+
